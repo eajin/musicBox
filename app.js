@@ -1,28 +1,14 @@
-const calculator = {
-  plus: function (a, b) {
-    return a + b;
-  },
-  minus: function (a, b) {
-    return a - b;
-  },
-  mul: function (a, b) {
-    return a * b;
-  },
-  div: function (a, b) {
-    return a / b;
-  },
-  squared: function (a, b) {
-    return a ** b;
-  },
-};
-const plusResult = calculator.plus(2, 3);
-const minusResult = calculator.minus(plusResult, 10);
-const mulResult = calculator.mul(minusResult, 10);
-const divResult = calculator.div(mulResult, 10);
-const squResult = calculator.squared(divResult, 10);
+const h1 = document.querySelector("div.hello h1");
 
-console.log(plusResult);
-console.log(minusResult);
-console.log(mulResult);
-console.log(divResult);
-console.log(squResult);
+function handleClick() {
+  const currentColor = h1.style.color;
+  let newColor;
+  if (currentColor === "blue") {
+    newColor = "tomato";
+  } else {
+    newColor = "blue";
+  }
+  h1.style.color = newColor;
+}
+
+h1.addEventListener("click", handleClick);
