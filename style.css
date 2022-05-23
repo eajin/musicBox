@@ -1,0 +1,11 @@
+h1 {
+  color: tomato;
+}
+
+.active {
+  color: aquamarine;
+}
+
+.sexy-font {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
